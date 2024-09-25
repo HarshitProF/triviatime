@@ -1,0 +1,211 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3f51b5;
+    padding: 15px 20px;
+    border-radius: 5px;
+}
+
+.navbar .logo h1 {
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.navbar .nav-links li {
+    margin-left: 20px;
+}
+
+.navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 8px 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar .nav-links a:hover {
+    background-color: #303f9f;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Header Section */
+.header {
+    background-color: #3949ab;
+    color: #fff;
+    padding: 50px 20px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header .intro h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.header .intro p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* Main Content */
+.category-quizzes {
+    margin-bottom: 40px;
+}
+
+.category-quizzes h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #3f51b5;
+    text-align: center;
+}
+
+.quiz-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.quiz-links article {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.quiz-links article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.quiz-links h4 a {
+    color: #3f51b5;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.quiz-links h4 a:hover {
+    color: #303f9f;
+}
+
+.quiz-links p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Footer */
+.footer {
+    background-color: #3f51b5;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 40px;
+}
+
+.footer p {
+    margin: 10px 0;
+    font-size: 0.9rem;
+}
+
+.footer a {
+    color: #ffeb3b;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: text-decoration 0.3s;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Ad Container */
+#ad-container {
+    margin: auto;
+    text-align: center;
+}
+
+#ad-container iframe {
+    width: 300px;
+    height: 250px;
+    border: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar .nav-links li {
+        margin: 10px 0;
+    }
+
+    .header {
+        padding: 30px 20px;
+    }
+
+    .header .intro h2 {
+        font-size: 2rem;
+    }
+
+    .header .intro p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .quiz-links {
+        grid-template-columns: 1fr;
+    }
+
+    .quiz-links article {
+        padding: 15px;
+    }
+
+    .header .intro h2 {
+        font-size: 1.8rem;
+    }
+
+    .header .intro p {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,40 @@
+# robots.txt for https://triviatime.online
+
+# Allow all search engines to crawl everything
+User-agent: *
+Disallow: 
+
+# Allow Googlebot (and other bots) to crawl all content
+User-agent: Googlebot
+Disallow:
+
+# Allow Googlebot-Image to crawl all images
+User-agent: Googlebot-Image
+Disallow:
+
+# Allow Googlebot-News to crawl all news content
+User-agent: Googlebot-News
+Disallow:
+
+# Sitemap location
+Sitemap: https://triviatime.online/sitemap_index.xml
+
+# Block common crawlers that are known to cause issues
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: YandexBot
+Disallow: /
+
+# Allow AdSense crawler
+User-agent: Mediapartners-Google
+Disallow:
